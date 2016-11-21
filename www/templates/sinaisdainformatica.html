@@ -1,0 +1,14 @@
+<ion-content>
+	<a class="button icon-left ion-chevron-left button-clear button-dark" href="#">Voltar</a>
+	<div class='row'>
+		<div class='col'>
+			<label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="search" placeholder="Buscar" ng-model="buscarS">
+			</label>
+		</div>
+	</div>
+	<div class="list">
+		<a class="item item-thumbnail-left" ng-repeat="sinal in sinaisInfor | filter:buscarS" ng-click={{sinal.click}}><img src={{sinal.img}}><h2>{{sinal.si}}</h2></a>
+	</div>
+</ion-content>
