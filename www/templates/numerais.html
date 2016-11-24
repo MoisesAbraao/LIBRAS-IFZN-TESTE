@@ -1,4 +1,4 @@
-<ion-content>
+<!-- <ion-content>
 	<a class="button icon-left ion-chevron-left button-clear button-dark" href="#">Voltar</a>
 	<div class='row'>
 		<div class='col'>
@@ -9,6 +9,20 @@
 		</div>
 	</div>
 	<div class="list">
+		<a class="item item-thumbnail-left" ng-repeat="numero in numerais | filter:buscarN" ng-click={{numero.click}}><img src={{numero.img}}><h2>{{numero.n}}</h2></a>
+	</div>
+</ion-content> -->
+
+ <ion-header-bar align-title="left" class="">
+    <a class="button icon-left icon ion-home button-clear button-dark" href="#">|</a>
+  
+	<!-- <i class="icon ion-search placeholder-icon"></i> -->
+	
+	<input type="search" placeholder="Buscar" ng-model="buscarN">
+</ion-header-bar>
+
+<ion-content class="has-header">
+  <div class="list">
 		<a class="item item-thumbnail-left" ng-repeat="numero in numerais | filter:buscarN" ng-click={{numero.click}}><img src={{numero.img}}><h2>{{numero.n}}</h2></a>
 	</div>
 </ion-content>

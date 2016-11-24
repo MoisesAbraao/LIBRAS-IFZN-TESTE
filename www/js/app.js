@@ -294,6 +294,12 @@ angular.module('starter', ['ionic'])
     },
 
     {   
+        si: "Facebook",
+        img:"imagens/facebook.jpg",
+        click: 'mostrar_facebook()'
+    },
+
+    {   
         si: "Fonte",
         img:"imagens/fonte.jpg",
         click: 'mostrar_fonte()'
@@ -303,6 +309,18 @@ angular.module('starter', ['ionic'])
         si: "Gabinete",
         img:"imagens/gabinete.jpg",
         click: 'mostrar_gabinete()'
+    },
+
+    {   
+        si: "Imprimir",
+        img:"imagens/imprimir.jpg",
+        click: 'mostrar_imprimir()'
+    },
+
+    {   
+        si: "Memória RAM",
+        img:"imagens/memoriaram.jpg",
+        click: 'mostrar_memoriaram()'
     },
 
     {   
@@ -324,6 +342,24 @@ angular.module('starter', ['ionic'])
     },
 
     {   
+        si: "Recortar",
+        img:"imagens/recortar.jpg",
+        click: 'mostrar_recortar()'
+    },
+
+    {   
+        si: "Restaurar",
+        img:"imagens/restaurar.jpg",
+        click: 'mostrar_restaurar()'
+    },
+
+    {   
+        si: "Salvar",
+        img:"imagens/salvar.jpg",
+        click: 'mostrar_salvar()'
+    },
+
+    {   
         si: "Software",
         img:"imagens/software.jpg",
         click: 'mostrar_software()'
@@ -336,9 +372,21 @@ angular.module('starter', ['ionic'])
     },
 
     {   
+        si: "Tabela",
+        img:"imagens/tabela.jpg",
+        click: 'mostrar_tabela()'
+    },
+
+    {   
         si: "Teclado",
         img:"imagens/teclado.jpg",
         click: 'mostrar_teclado()'
+    },
+
+    {   
+        si: "Upload",
+        img:"imagens/upload.jpg",
+        click: 'mostrar_upload()'
     },
 
     {
@@ -704,6 +752,15 @@ angular.module('starter', ['ionic'])
       alerta.then();
   
   };
+  $scope.mostrar_facebook = function(){
+      var alerta = $ionicPopup.alert({
+         title: 'Facebook',
+         template: '<img src="imagens/facebook.jpg" width="100%">' 
+       });
+
+      alerta.then();
+  
+  };
   $scope.mostrar_fonte = function(){
       var alerta = $ionicPopup.alert({
          title: 'Fonte',
@@ -717,6 +774,24 @@ angular.module('starter', ['ionic'])
       var alerta = $ionicPopup.alert({
          title: 'Gabinete',
          template: '<img src="imagens/gabinete.jpg" width="100%">' 
+       });
+
+      alerta.then();
+  
+  };
+  $scope.mostrar_imprimir= function(){
+      var alerta = $ionicPopup.alert({
+         title: 'Imprimir',
+         template: '<img src="imagens/imprimir.jpg" width="100%">' 
+       });
+
+      alerta.then();
+  
+  };
+  $scope.mostrar_memoriaram = function(){
+      var alerta = $ionicPopup.alert({
+         title: 'Memória RAM',
+         template: '<img src="imagens/memoriaram.jpg" width="100%">' 
        });
 
       alerta.then();
@@ -749,6 +824,33 @@ angular.module('starter', ['ionic'])
       alerta.then();
   
   };
+  $scope.mostrar_recortar= function(){
+      var alerta = $ionicPopup.alert({
+         title: 'Recortar',
+         template: '<img src="imagens/recortar.jpg" width="100%">' 
+       });
+
+      alerta.then();
+  
+  };
+  $scope.mostrar_restaurar = function(){
+      var alerta = $ionicPopup.alert({
+         title: 'Restaurar',
+         template: '<img src="imagens/restaurar.jpg" width="100%">' 
+       });
+
+      alerta.then();
+  
+  };
+  $scope.mostrar_salvar = function(){
+      var alerta = $ionicPopup.alert({
+         title: 'Salvar',
+         template: '<img src="imagens/salvar.jpg" width="100%">' 
+       });
+
+      alerta.then();
+  
+  };
   $scope.mostrar_software = function(){
       var alerta = $ionicPopup.alert({
          title: 'Software',
@@ -767,10 +869,28 @@ angular.module('starter', ['ionic'])
       alerta.then();
   
   };
+  $scope.mostrar_tabela = function(){
+      var alerta = $ionicPopup.alert({
+         title: 'Tabela',
+         template: '<img src="imagens/tabela.jpg" width="100%">' 
+       });
+
+      alerta.then();
+  
+  };
   $scope.mostrar_teclado = function(){
       var alerta = $ionicPopup.alert({
          title: 'Teclado',
          template: '<img src="imagens/teclado.jpg" width="100%">' 
+       });
+
+      alerta.then();
+  
+  };
+  $scope.mostrar_upload = function(){
+      var alerta = $ionicPopup.alert({
+         title: 'Upload',
+         template: '<img src="imagens/upload.jpg" width="100%">' 
        });
 
       alerta.then();

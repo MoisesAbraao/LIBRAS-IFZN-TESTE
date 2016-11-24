@@ -1,4 +1,4 @@
-<ion-content>
+<!-- <ion-content>
 	<a class="button icon-left ion-chevron-left button-clear button-dark" href="#">Voltar</a>
 	<div class='row'>
 		<div class='col'>
@@ -9,6 +9,25 @@
 		</div>
 	</div>
 	<div class="list">
+	<label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="search" placeholder="Buscar" ng-model="buscar.l">
+			</label>
+		<a class="item item-thumbnail-left" ng-repeat="letra in letras | filter:buscar" ng-click={{letra.click}}><img src={{letra.img}}><h2>Letra {{letra.l}}</h2></a>
+	</div>
+</ion-content>
+ -->
+
+ <ion-header-bar align-title="left" class="">
+    <a class="button icon-left icon ion-home button-clear button-dark" href="#">|</a>
+  
+	<!-- <i class="icon ion-search placeholder-icon"></i> -->
+	
+	<input type="search" placeholder="Buscar" ng-model="buscar.l">
+</ion-header-bar>
+
+<ion-content class="has-header">
+  <div class="list">
 		<a class="item item-thumbnail-left" ng-repeat="letra in letras | filter:buscar" ng-click={{letra.click}}><img src={{letra.img}}><h2>Letra {{letra.l}}</h2></a>
 	</div>
 </ion-content>
